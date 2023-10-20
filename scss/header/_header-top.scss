@@ -1,0 +1,113 @@
+.header-top {
+    z-index: 30;
+    width: 100%;
+    background-color: $color-dark-blue;
+    position: relative;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 10rem;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 0 2.4375rem;
+    }
+
+    &__logo img {
+        width: 13.125rem;
+    }
+
+    &__humburger-btn {
+        display: none;
+    }
+
+    @media (max-width: 1057px) {
+        &__working-days {
+            display: none;
+        }
+    }
+
+    @media (max-width: 769px) {
+        &__mail {
+            display: none;
+        }
+
+        &__inner {
+            min-height: 6.25rem;
+        }
+    }
+
+    @media (max-width: 460px) {
+        
+        &__tel {
+            display: none;
+        }
+
+        &__humburger-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 3.125rem;
+            height: 3.125rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-image: url(../../images/header/header-top/hamburger.png);
+            transition: all 0.3s ease;
+        }
+
+        &__humburger-btn._open {
+            background-image: url(../../images/header/header-top/close.png);
+        }
+
+        &__logo img {
+            width: 9.375rem;
+        }
+    }
+}
+
+.hamburger {
+    height: 100vh;
+    width: 100vw;   
+    font-size: 1.5rem;
+    display: none;
+    z-index: 10;
+    background-color: $color-dark-blue;
+    position: absolute;
+    left: -100vw;
+    opacity: 0;
+    overflow: auto;
+    top: 3.125rem;
+    padding-bottom: 9.375rem;
+    transition: left 0.3s ease-in-out;
+
+    &__list {
+        display: block;
+        overflow: auto;
+        min-height: 31.25rem;
+    }
+
+    &__item::before {
+        content: none;
+    }
+
+    &__link::after {
+        content: none;
+    }
+
+    @media (max-width: 460px) { 
+        display: block;
+    }
+
+}
+
+.hamburger._open {
+    left: 0;
+    opacity: 1;
+}
+

@@ -1,0 +1,108 @@
+.transporting {
+    position: relative;
+    padding: 6.4375rem 0.3125rem 9.375rem;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 2.1875rem;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.125rem;
+        margin-bottom: 4.0625rem;
+    }
+
+    &__card {
+        position: relative;
+        width: 20rem;
+        min-height: 25.4375rem;
+        padding: 21rem 1.5625rem 0px;
+    }
+
+    &__card--toggle {
+        display: block;
+    }
+
+    &__card-bg {
+        position: absolute;
+        width: 100%;
+        object-fit: cover;
+        left: 0;
+        top: 0;
+        z-index: 5;
+    }
+
+    &__card-title {
+        position: relative;
+        z-index: 20;
+
+        font-family: $font-rubik;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__card-text {
+        position: relative;
+        z-index: 20;
+
+        color: $color-yellow;
+        font-family: $font-krub;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 151.523%;
+    }
+
+    &__btn {
+        padding: 0 3.5rem;
+        margin: 0 auto;
+        position: relative;
+        z-index: 20;
+    }
+
+    @media (min-width: 666px) {
+        &__card--toggle {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1011px) {
+        padding: 6.4375rem 8.125rem 9.375rem;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 6.4375rem 11.125rem 9.375rem;
+    }
+
+    @media (min-width: 1350px) {
+        padding: 6.4375rem 0.3125rem 9.375rem;
+    }
+
+    @media (min-width: 1690px) {
+        &__card--toggle {
+            display: block;
+        }
+    }
+
+    @media (max-width: 555px) {
+        padding-bottom: 3.125rem;
+    }
+}
+
+.transporting::after {
+    content: "";
+    width: 100%;
+    min-height: 25rem;
+    background: $gradient-yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: 555px) {
+        min-height: 18.75rem;
+    }
+}

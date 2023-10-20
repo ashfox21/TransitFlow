@@ -1,0 +1,116 @@
+.contact {
+    padding: 8.9375rem 0.625rem;
+
+    background-color: $color-dark-blue;
+    &__section-title {
+        color: $color-white;
+        max-width: 75rem;
+        margin: 0 auto;
+        margin-bottom: 0.75rem;
+    }
+
+    &__wrapper {
+        max-width: 75rem;
+        margin: 0 auto;
+
+        display: flex;
+        gap: 2.5rem 5.5rem;
+        margin-bottom: 4.375rem;
+    }
+
+    &__get-touch {
+        max-width: 22.0625rem;
+    }
+
+    &__title {
+        color: $color-white;
+        margin-bottom: 0.1875rem;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem 0;
+    }
+
+    &__forms {
+        max-width: 47.375rem;
+    }
+
+    &__forms-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.9375rem 1.75rem;
+        margin-bottom: 1.9375rem;
+    }
+
+    &__form {
+        max-width: 22.8125rem;        
+    }
+
+    &__textarea {
+        display: block;
+        margin-bottom: 1.875rem;
+        padding-top: 0.9375rem;
+        min-height: 9.625rem;
+        resize: unset;
+    }
+
+    &__swiper {
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+
+    &__slide-inner {
+        width: 100%;
+        position: relative;
+        min-height: 14.625rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__slide-inner img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+    &__slide-inner svg{
+        position: relative;
+        z-index: 15;
+    }
+
+    @media (max-width: 1230px) {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__section-title {
+            max-width: 22.0625rem;
+        }
+    }
+
+    @media (max-width: 780px) {
+        &__form {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: all 5000s ease-in-out 0s;
+}

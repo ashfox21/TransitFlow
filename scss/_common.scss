@@ -1,0 +1,170 @@
+body._lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    color: $color-white;
+    font-family: $font-krub;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 151.523%;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 81.25rem;
+    padding: 0 3.125rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 840px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+}
+
+.header {
+    position: relative;
+
+    @media (max-width: 460px) {
+        position: fixed;
+        width: 100vw;
+        z-index: 200;
+    }
+}
+
+.footer {
+    flex-shrink: 0;
+
+    background-color: $color-dark-blue;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.working-days,
+.mail,
+.tel {
+    display: flex;
+    align-items: center;
+    gap: 0 1.0625rem;
+
+    font-family: $font-krub;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135.023%;
+}
+
+.btn {
+    padding: 0 2.9375rem;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $font-krub;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 135.023%;
+}
+
+.btn--yellow {
+    background: $gradient-yellow;
+    color: $color-brown;
+}
+
+.btn--blue {
+    background-color: $color-dark-blue;
+    color: $color-white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn--blue::after {
+    content: "";
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 100%;
+    background-color: $color-blue-purple;
+
+    position: absolute;
+    right: -1.0625rem;
+    bottom: -1.75rem;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+    &__item {
+    }
+}
+
+.section-title {
+    font-family: $font-rubik;
+    font-size: 0.875rem;
+    font-weight: 400;
+    position: relative;
+    padding: 0 0.5625rem;
+    color: $color-black;
+    height: 23px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0.25rem;
+    background: $gradient-yellow;
+    left: 0;
+    top: 0;
+}
+
+.title {
+    color: $color-dark-purple;
+    font-family: $font-rubik;
+    font-size: 2.1875rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text {
+    color: $color-grey;
+    font-family: $font-krub;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 151.523%;
+}
+
+.form, .textarea {
+    background-color: transparent;
+    border: 0.0625rem solid $color-blue-grey;
+    width: 100%;
+    height: 3.75rem;
+    padding: 0.25rem 1.25rem 0 1.875rem;
+    display: flex;
+    align-items: center;
+
+    color: $color-white;
+    font-family: $font-spartan;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.form:focus-visible, .textarea:focus-visible {
+    border: 0.0625rem solid $color-blue-grey-light;
+    border-radius: 0;
+    outline: none;
+}
+
+.form::placeholder, .textarea::placeholder {
+    color: $color-grey;
+    font-family: $font-spartan;
+    font-size: 1.25rem;
+    font-weight: 400;
+}

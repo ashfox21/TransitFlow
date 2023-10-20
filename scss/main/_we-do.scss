@@ -1,0 +1,62 @@
+.we-do {
+    color: $color-dark-purple;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 6rem 0 8.25rem;
+        flex-wrap: wrap;
+        gap: 1.25rem 0;
+    }
+
+    &__titles {
+        max-width: 18.375rem;
+        gap: 2.0625rem;
+    }
+
+    &__section-title {
+        padding-bottom: 0.9375rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.375rem 0;
+        max-width: 54.5625rem;
+        justify-content: space-between;
+    }
+
+    &__card {
+        max-width: 24.4375rem;
+        display: flex;
+        gap: 2.5625rem;
+        min-height: 7.1875rem;
+    }
+
+    &__card-image {
+        width: 3.875rem;
+        height: 3.875rem;
+    }
+
+    &__card-title {
+        font-family: $font-rubik;
+        font-size: 1.5625rem;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.9375rem;
+    }
+
+    &__card-text {
+        color: $color-grey;
+        font-family: $font-krub;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 151.523%;
+    }
+
+    @media (max-width: 425px) {
+        &__card {
+            flex-wrap: wrap;
+        }
+    }
+}

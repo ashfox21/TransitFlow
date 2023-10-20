@@ -1,0 +1,148 @@
+.footer-top {
+    min-height: 30.5625rem;
+    position: relative;
+
+    &__bg-line {
+        background-color: $color-white-transparent;
+        min-height: 7.375rem;
+        z-index: 5;
+    }
+
+
+    &__logo {
+        margin-right: 3.375rem;
+        background-color: $color-dark-blue;
+        min-height: 7.375rem;
+        display: flex;
+        align-items: center;
+        padding-right: 10.75rem;
+        position: relative;
+        margin-top: -0.0625rem;
+        margin-bottom: 1.875rem;
+    }
+
+    &__logo::after {
+        position: absolute;
+        top: 0;
+        left: -3.125rem;
+        content: "";
+        height: 100%;
+
+        background-color: $color-dark-blue;
+        width: 3.125rem;
+    }
+
+    &__title {
+        min-width: 5.375rem;
+        margin-right: 8.75rem;
+        padding: 1.875rem 0;
+        margin-bottom: 2.1875rem;
+    }
+
+    &__body {
+        z-index: 30;
+        display: flex;
+        margin-top: -6rem;
+    }
+
+    &__title-subscribe {
+        margin: 0;
+        margin-bottom: 2.875rem;
+    }
+
+    &__contacts {
+        max-width: 19.9375rem;
+        margin-top: -1.3125rem;
+        margin-right: 7.3125rem;
+    }
+
+    &__contacts > p {
+        margin-bottom: 2.0625rem;
+    }
+
+    &__mail {
+        margin-bottom: 1.875rem;
+    }
+
+    &__colums-list {
+        max-width: 5.375rem;
+        margin-right: 8.75rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__columns-item {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 250%;
+    }
+
+    &__social-media, &__social-media {
+        gap: 0 1.1875rem;
+    }
+
+    @media (max-width: 1225px) {
+        &__colums {
+            display: none;
+        }
+
+        &__body {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__contacts {
+            margin-right: 0;
+            
+        }
+    }
+
+    @media (max-width: 675px) {
+        padding-bottom: 1.875rem;
+
+        &__contacts > p {
+            width: 100%;
+            margin-bottom: 0.9375rem;
+        }
+
+        &__contacts {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        &__bg-line {
+            background-color: $color-dark-blue;
+        }
+
+        &__logo {
+            margin: 0 0 0.9375rem 0;
+            min-height: 2.5rem;
+            padding-top: 1.875rem;
+        }
+
+        &__title-subscribe {
+            padding: 0;
+            margin-bottom: 0.9375rem;
+        }
+    }
+}
+
+.mailing-form {
+    width: 19.8125rem;
+
+    &__input {
+        margin-bottom: 1.25rem;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 0 2.1875rem;
+    }
+
+    @media (max-width: 425px) {
+        &__btn {
+            width: 6.875rem;
+        }
+    }
+}

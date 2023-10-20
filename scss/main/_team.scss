@@ -1,0 +1,77 @@
+.team {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 6.25rem;
+
+    &__section-title {
+        margin-bottom: 1.1875rem;
+    }
+
+    &__title {
+        margin-bottom: 2.5rem;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3.375rem;
+    }
+
+    &__card {
+        max-width: 22.75rem;
+        background-color: $color-dark-purple;
+        padding-bottom: 1.25rem;
+
+        position: relative;
+        z-index: 10;
+    }
+
+    &__photo {
+        width: 100%;
+        margin-bottom: 2.625rem;
+    }
+
+    &__card-name {
+        padding: 0 2.125rem;
+        margin-bottom: 0.125rem;
+
+        font-family: $font-rubik;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__prof {
+        padding: 0 2.125rem;
+
+        font-family: $font-krub;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 151.523%;
+    }
+
+    &__social-media {
+        position: absolute;
+        right: 0;
+        bottom: 5rem;
+
+        display: flex;
+        gap: 0 1.5625rem;
+        align-items: center;
+        background: $gradient-yellow;
+        padding: 0 1.0625rem;
+        min-height: 3.9375rem;
+    }
+
+    &__social-media svg {
+        width: 1.4375rem;
+        height: 1.4375rem;
+    }
+
+    &__twitter-icon {
+        padding-bottom: 0.375rem;
+    }
+}

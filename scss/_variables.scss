@@ -1,0 +1,35 @@
+// colors
+
+$color-white: #fff;
+$color-dark-blue: #091242;
+$color-brown: #23212a;
+$color-black: #000;
+$color-blue-purple: #1f2a69;
+$color-dark-purple: #1c1f35;
+$color-grey: #666c89;
+$color-blue-grey: #4e5683;
+$color-blue-grey-light: #7985cb;
+$color-secondary-grey: #d6d6d6;
+$color-midnight-Blue-transparent: rgba(28, 31, 53, 0.91);
+$color-yellow: #FFBE34;
+
+$color-nav-dark: rgba(9, 18, 66, 0.25);
+$color-dark-blue-transparent: rgba(4, 28, 55, 0.5);
+$color-blue-transparent: rgba(255, 255, 255, 0.2);
+$color-white-transparent: rgba(255, 255, 255, 0.08);
+
+// gradients
+
+$gradient-yellow: linear-gradient(
+    93deg,
+    rgba(255, 182, 41, 1) 0%,
+    rgba(255, 218, 86, 1) 56%,
+    rgba(255, 215, 166, 1) 100%
+);
+
+
+// fonts
+
+$font-krub:"Krub", sans-serif;
+$font-spartan: "League Spartan", sans-serif;
+$font-rubik: "Rubik", sans-serif;

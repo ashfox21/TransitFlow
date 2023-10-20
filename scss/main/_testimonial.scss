@@ -1,0 +1,114 @@
+.testimonial {
+    padding: 6.3125rem 0;
+
+    &__section-title {
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__swiper {
+        min-height: 26.5625rem;
+        padding-top: 5.1875rem;
+        margin-top: -2.75rem;
+    }
+    
+    &__slide {
+        color: $color-grey;
+    }
+    
+    &__slide--blue {
+        background-color: $color-dark-blue;
+        color: $color-white;
+    }
+    &__slide-wrapper {
+        padding: 4.5rem 3.875rem;
+    }
+
+    &__slide-client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__slide-client-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5625rem;
+    }
+
+    &__slide-client-quote-icon {
+        display: block;
+    }
+
+    &__slide-text {
+        margin-bottom: 2rem;
+    }
+
+    &__slide-stars {
+        display: flex;
+        align-items: center;
+        gap: 0 0.1875rem;
+    }
+
+
+    &__btn-prev {
+        background-image: url(../../images/testimonial/prev.png);
+        width: 2.75rem;
+        height: 2.75rem;
+        position: absolute;
+        top: 0;
+        right: 3.375rem;
+        cursor: pointer;
+    }
+
+    &__btn-next {
+        width: 2.75rem;
+        height: 2.75rem;
+        background-image: url(../../images/testimonial/next.png);
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+        &__slide-wrapper {
+            padding: 2rem 1.875rem;
+        }
+    }
+
+    @media (max-width: 720px) {
+        &__slide-client-quote-icon {
+            display: none;
+        }
+    }
+
+    @media (max-width: 555px) {
+        padding: 3.125rem 0 3.125rem;
+
+        &__swiper {
+            min-height: 26.5625rem;
+            padding-top: 0;
+            margin-top: 0;
+            padding-bottom: 2.5rem;
+        }
+
+        &__btn-prev {
+            display: none;
+        }
+    
+        &__btn-next {
+            display: none;
+        }
+
+        &__title {
+            margin-bottom: 1.875rem;
+        }
+    }
+}
+
+

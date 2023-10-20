@@ -1,0 +1,10 @@
+.animation__fade-in--up {
+    transition: all 0.9s ease-in;
+    transform: translateY(0.9375rem);
+    opacity: 0;
+}
+
+.animation__start {
+    transform: translateY(0px);
+    opacity: 1;
+}

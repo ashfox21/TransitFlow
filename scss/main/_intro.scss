@@ -1,0 +1,52 @@
+.intro {
+    background-image: url("../../images/intro/main-intro-bg-big.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -4.875rem;
+
+    &__inner {
+        padding: 15.875rem 0 13.625rem;
+
+        max-width: 34.625rem;
+    }
+
+    &__section-title {
+        background-color: $color-dark-blue-transparent;
+        color: $color-white;
+        margin-bottom: 0.5rem;
+        max-width: 15.25rem;
+    }
+
+    &__title {
+        font-family: $font-rubik;
+        font-size: 3.75rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 151.523%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__btn {
+        width: 12.125rem;
+        height: 3.75rem;
+    }
+
+    @media (max-width: 425px) {
+        margin-top: 4.875rem;
+
+        &__title {
+            font-size: 2.1875rem;
+            margin-bottom: 0.625rem;
+        }
+
+        &__inner {
+            padding: 9.625rem 0 7.375rem;
+        }
+    }
+}
