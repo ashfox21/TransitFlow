@@ -497,7 +497,7 @@ body._lock {
 }
 
 .intro {
-  background-image: url("../../images/intro/main-intro-bg-big.jpg");
+  background-image: url("../images/intro/main-intro-bg-big.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
