@@ -894,7 +894,7 @@ body._lock {
   gap: 0 0.1875rem;
 }
 .testimonial__btn-prev {
-  background-image: url(../../images/testimonial/prev.png);
+  background-image: url(../images/testimonial/prev.png);
   width: 2.75rem;
   height: 2.75rem;
   position: absolute;
@@ -905,7 +905,7 @@ body._lock {
 .testimonial__btn-next {
   width: 2.75rem;
   height: 2.75rem;
-  background-image: url(../../images/testimonial/next.png);
+  background-image: url(../images/testimonial/next.png);
   position: absolute;
   top: 0;
   right: 0;
