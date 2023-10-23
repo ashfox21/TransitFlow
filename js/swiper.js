@@ -19,6 +19,12 @@ const testimonialSwiperConfig = {
     navigation: {
         nextEl: '.testimonial__btn-next',
         prevEl: '.testimonial__btn-prev',
+    },
+    autoplay: {
+        delay: 1000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        loop: true,
     }
 };
 
