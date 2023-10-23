@@ -324,11 +324,11 @@ body._lock {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    background-image: url(../../images/header/header-top/hamburger.png);
+    background-image: url(../images/header/header-top/hamburger.png);
     transition: all 0.3s ease;
   }
   .header-top__humburger-btn._open {
-    background-image: url(../../images/header/header-top/close.png);
+    background-image: url(../images/header/header-top/close.png);
   }
   .header-top__logo img {
     width: 9.375rem;
